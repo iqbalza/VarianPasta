@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+
+        android:src="@drawable/bolognese" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="25dp"
+        android:text="Spaghetti Bolognese | Rp 25,000" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_counter"
+        android:layout_toRightOf="@id/image"
+        android:orientation="horizontal"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@+id/nama"
+        >
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:text="+"
+            />
+
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="0"
+
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:text="-" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
